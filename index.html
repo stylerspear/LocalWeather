@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class = "container">
+  <!--project title-->
+  <h1 class= "text-center name">Your Local Weather</h1>
+  <p class = "text-center city" id="city"></p>
+  <div id="weather-container">
+  <div class = "col-md-3 text-center basic-data">
+    
+    <!--temperature data-->
+    <div class = "temperature-data">
+      <img class = "weather-icon" id="weather-icon" src = "#">
+      <span class = "temperature" id = "temperature"></span>
+    </div>
+    
+    <!--weather description-->
+    <div class = "weather-info">
+      <p class = "weather-description" id="weather-description"></p>
+    </div>
+    
+  </div>
+  <!--advanced data-->
+  <div class = "col-md-3 advanced-data">
+    <p class = "humidity" id = "humidity"></p>
+    <p class = "atm-pressure" id = "atm-pressure"></p>
+    <p class = "wind-data" id = "wind-data"></p>
+  </div>
+  </div>
+  
+  <div class ="col-md-3"></div>
+  
+  <!--change units -->
+  <div class = "col-md-12 text-center unit-changer">
+    <p class = "measurement-units">Units:
+    <select id="units-selector" onchange = "changeWeatherDisplay()">
+      <option>Fahrenheit</option>
+      <option>Celcius</option>
+    </select>
+    </p>  
+  </div>
+
+</div>
+<footer class="text-center">
+<p>&copy; Tyler Spear 2015
+</footer>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
